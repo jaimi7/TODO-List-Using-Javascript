@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria;
+}
+body{
+    background: #dadada;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #434343;
+    padding: 10px 100px;
+}
+.header .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+.header .search input{
+    font-size: 16px;
+    padding: 10px;
+    width: 400px;
+    color: #434343;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+}
+.container{
+    width: 60%;
+    margin: 50px auto;
+}
+.container h1{
+    text-align: center;
+}
+.container .box{
+    width: 100%; 
+    margin: 30px auto;
+    background: #f7f7f7;
+    box-shadow: 1px 1px 5px 5px #727272;
+    border-radius: 15px;
+    padding: 30px;
+}
+.container .box .task input{
+    margin: 5px 2%;
+    padding: 5px;
+    width: 55%;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 5px #727272;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 3px;
+}
+.container .box .task button{
+    width: 15%;
+    margin: 5px 2%;
+    padding: 6px;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #f7f7f7;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.container .box .task #add{
+    background: #009b00;
+}
+.container .box .task #save{
+    background: #00319b;
+    display: none;
+}
+.container .box .task #delete{
+    background: #d80000;
+}
+.container .box .task #add:hover{
+    background: #003f00;
+}
+.container .box .task #delete:hover{
+    background: #6f0000;
+}
+.container .box .task #save:hover{
+    background: #16064f;
+}
+.container .box .list table{
+    box-shadow: 0px 0px 4px 2px #e9e9e9;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
+    width: 90%;
+    padding: 8px 5px;
+    border: none;
+}
+.container .box .list table tr:nth-child(odd){
+    background: #f0f0f0;
+}
+.container .box .list table tr td,
+.container .box .list table tr th{
+    padding: 10px 20px;
+}
+.container .box .list table button{
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+.container .box .list table button i{
+    padding-right: 8px;
+}
+.container .box .list table .edit button{ 
+    color: #0999c5;
+}
+.container .box .list table .edit button:hover{
+    color: #1e429d;
+}
+.container .box .list table .delete button{
+    color: #d80000;
+}
+.container .box .list table .delete button:hover{ 
+    color: #6f0000;
+} 
